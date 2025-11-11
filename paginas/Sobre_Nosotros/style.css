@@ -1,0 +1,152 @@
+/* ---- GENERAL ---- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fffdfa;
+  color: #4F4D46;
+  margin: 0;
+  padding: 30px;
+}
+
+/* ---- TITULO ---- */
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo h1 {
+  color: #4F4D46;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.titulo p {
+  color: #5B5046;
+  font-style: italic;
+}
+
+/* ---- ESTRUCTURA GRID ---- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 15px;
+}
+
+/* ---- BOXES ---- */
+.box {
+  border: 2px solid #D9B99B;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-color: #5B5046;
+}
+
+/* ---- COLORES DE FONDO ---- */
+.imagen1, .imagen2, .imagen3 {
+  background-color: #EED9C4;
+  color: #5B5046;
+  font-style: italic;
+}
+
+.mision, .vision {
+  background-color: #D9B99B;
+}
+
+.valores, .cultura, .frase {
+  background-color: #EED9C4;
+}
+
+.logo {
+  background-color: #fffdfa;
+  border: 3px solid #4F4D46;
+}
+
+/* ---- TEXTO ---- */
+h2 {
+  margin-bottom: 10px;
+  color: #4F4D46;
+}
+
+p, li, blockquote {
+  color: #787569;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  border-top: 2px solid #D9B99B;
+  padding-top: 15px;
+  color: #5B5046;
+  font-size: 13px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .box {
+    height: auto;
+  }
+}
+
+/* ---- FRASE DESTACADA ---- */
+.frase {
+  background-color: #D9B99B;
+  border: 3px solid #4F4D46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.frase blockquote {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4F4D46;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.4;
+  position: relative;
+  max-width: 80%;
+}
+
+.frase blockquote::before,
+.frase blockquote::after {
+  color: #4F4D46;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.frase blockquote::before {
+  content: "“";
+  top: -10px;
+  left: -25px;
+}
+
+.frase blockquote::after {
+  content: "”";
+  bottom: -10px;
+  right: -25px;
+}

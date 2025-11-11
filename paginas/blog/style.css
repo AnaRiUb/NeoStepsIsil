@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div img{
+  width: 200px ;
+  margin-top: 10px;
+  margin: auto;
+}
+.columna{
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+.fila{
+  display: flex;
+  border: 1px solid bisque;
+  background-color: #EED9C4;
+}
+button{
+  margin: 5px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+.contexto{
+  padding: 10px;
+}
+button:hover{
+  cursor: pointer;
+  background-color:blanchedalmond;
+  font-weight:700;
+}
