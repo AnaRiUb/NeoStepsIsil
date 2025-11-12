@@ -6,30 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrito - NeoSteps</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
 
-  
- <header>
+<header>
   <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="Neostep Logo" />
+      <img src="../../imagenes/logo.png" alt="Neostep Logo" />
     </div>
 
-<a href="../../index.html">Home</a>
-<a href="/paginas/Producto_Seleccionado/Product_Caracter.html">Colecciones</a>
-<a href="/paginas/Sobre_Nosotros/index.html">Sobre nosotros</a>
-<a href="/paginas/mision_vision_valores/valores.html">Valores</a>
-<a href="/paginas/blog/blog.html">Blog</a>
-<a href="/paginas/carrito_compras/index.html">Carrito</a>
-<a href="/paginas/Pasarela_pagos/index.html">Pagos</a>
-    
+    <a href="../../index.html">Inicio</a>
+    <a href="../producto_seleccionado/Product_Caracter.html">Colecciones</a>
+    <a href="../sobre_nosotros/index.html">Sobre nosotros</a>
+    <a href="../valores/valores.html">Valores</a>
+    <a href="../blog/blog.html">Blog</a>
+    <a href="../carrito_compras/index.html">Carrito</a>
+    <a href="../pasarela_pagos/index.html">Pagos</a>
 
     <div class="login">
-      <a href="/paginas/Inicio_sesion/Iniciar seccion/index.html">Iniciar sesión</a>
-    </div>
+      <a href="../Inicio_sesion/Iniciar seccion/index.html">Iniciar sesión</a>
+    </div>     
   </nav>
 </header>
+
+</body>
 
   <div class="header">
     <h1>MY BAG</h1>
@@ -114,7 +115,9 @@
           <span><strong>$293.00</strong></span>
         </div>
 
-        <button class="checkout-btn">CHECKOUT</button>
+        <button class="checkout-btn" onclick="window.location.href='../pasarela_pagos/index.html'">
+          CHECKOUT
+        </button>
 
         <div class="payment">
           <p>WE ACCEPT:</p>
