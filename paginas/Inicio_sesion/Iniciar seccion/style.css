@@ -7,7 +7,7 @@ body {
   
 }
 
-.container_principal{
+.container_principal_3{
     display: flex;
   justify-content: center;
   align-items: center;
@@ -71,3 +71,83 @@ button:hover{
     color: #FFFFFF;
 }
 
+
+/* ---------- LOGIN RESPONSIVE ---------- */
+
+/* PC (Diseño original no cambia) */
+.container {
+  display: flex;
+  border: 1px solid #000;
+  max-width: 900px;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+  .container_principal_3 {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .box {
+    padding: 30px;
+    text-align: center;
+  }
+
+  input, button {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .contenido {
+    width: auto;
+    max-width: 350px;
+  }
+
+  .box a {
+    padding: 0;
+    display: block;
+    text-align: right;
+    margin-top: -5px;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+  h1, .crear {
+    font-size: 35px;
+  }
+
+  .container {
+    width: 100%;
+    border: none;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+
+  .contenido {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}
