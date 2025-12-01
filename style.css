@@ -12,6 +12,74 @@ section {
   text-align: center;       
   padding: 40px 20px;
 }
+/* Contenedor general */
+.container_principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 170px;
+   padding-top: 135px;
+
+}
+.container_principal_2 {
+  background-color: #fdfaf7;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  /* Eliminar height: 100vh */
+}
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fdfaf7;
+}
+/* Títulos */
+.valores-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.valores-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.valores-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Cards de valores */
+.valores-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.valor {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.valor img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.valor h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.valor p {
+  font-size: 1rem;
+  color: #444;
+}
 
 section h1,
 section p {
@@ -143,38 +211,31 @@ section p {
 }
 
 
-/* Responsive */
+/* Tablets */
 @media (max-width: 900px) {
-  .navbar {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px 14px;
-  }
-
-  .logo {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4px;
-  }
-
-  .login {
-    margin-left: 0;
-    margin-left: auto;
+  .valores-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Celulares */
 @media (max-width: 600px) {
-  .navbar {
-    justify-content: center;
+  .valores-container {
+    grid-template-columns: 1fr;
   }
 
-  .navbar > a {
-    font-size: 0.9rem;
-    padding: 6px 8px;
+  .valor {
+    padding: 10px;
   }
 
-  .login a {
-    padding: 7px 12px;
+  .valor img {
+    width: 100px;
   }
 }
+
+.valores-header {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin-left: -90px;
+}   
