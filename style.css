@@ -216,6 +216,9 @@ section p {
   .valores-container {
     grid-template-columns: repeat(2, 1fr);
   }
+   .navbar {
+     flex-wrap: wrap;
+  }
 }
 
 /* Celulares */
@@ -227,7 +230,9 @@ section p {
   .valor {
     padding: 10px;
   }
-
+  .navbar {
+     flex-wrap: wrap;
+  }
   .valor img {
     width: 100px;
   }
@@ -239,3 +244,4 @@ section p {
   padding: 0;
   margin-left: -90px;
 }   
+
